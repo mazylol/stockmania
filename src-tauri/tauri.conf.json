@@ -37,7 +37,7 @@
         "providerShortName": null,
         "signingIdentity": null
       },
-      "resources": [],
+      "resources": ["../static/**/*"],
       "shortDescription": "",
       "targets": "all",
       "windows": {
@@ -55,10 +55,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
-        "resizable": true,
+        "height": 720,
+        "resizable": false,
         "title": "Stockmania",
-        "width": 800
+        "width": 1280
       }
     ]
   }
