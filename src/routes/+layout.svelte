@@ -2,6 +2,6 @@
 	import '../app.css';
 </script>
 
-<div class="bg-gray-200 min-h-screen">
+<div class="min-h-screen overflow-hidden">
 	<slot />
 </div>
