@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: PixeloidSans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/fonts/PixeloidSans-mLxMm.woff2);
+	font-family: PixeloidSans;
+	font-style: normal;
+	font-weight: 400;
+	src: url(/fonts/PixeloidSans-mLxMm.woff2);
 }
