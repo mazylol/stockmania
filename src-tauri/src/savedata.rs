@@ -3,12 +3,11 @@ use std::{fs::File, io::Write};
 use serde::{Deserialize, Serialize};
 
 pub fn check_save() {
-    let save_file = File::open("save.json");
-    if save_file.is_err() {
+    if File::open("save.json").is_err() {
         println!("Save file not found, creating a new one...");
         let new_save_file = File::create("save.json");
         if new_save_file.is_err() {
-            println!("Failed to create a new save file!");
+            panic!("Failed to create a new save file!");
         } else {
             new_save_file
                 .unwrap()
