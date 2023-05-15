@@ -10,11 +10,17 @@ pub fn check_save() {
         if new_save_file.is_err() {
             println!("Failed to create a new save file!");
         } else {
-            new_save_file.unwrap().write_all(serde_json::to_string(&Data {
-                stocks: Vec::new(),
-                balance: 10000.0,
-            })
-            .unwrap().as_bytes()).unwrap();
+            new_save_file
+                .unwrap()
+                .write_all(
+                    serde_json::to_string(&Data {
+                        stocks: Vec::new(),
+                        balance: 10000.0,
+                    })
+                    .unwrap()
+                    .as_bytes(),
+                )
+                .unwrap();
 
             println!("New save file created!");
         }
