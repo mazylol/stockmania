@@ -1,4 +1,4 @@
-<h1 id="pixelfont" class="text-8xl text-center mt-[25vh]">
+<h1 class="text-8xl text-center mt-[25vh]" style="font-family: PixeloidSans">
 	<span class="text-green-400">Stock</span><span class="text-red-600">Mania</span>
 </h1>
 
@@ -19,16 +19,3 @@
 		>About</a
 	>
 </div>
-
-<style>
-	@font-face {
-		font-family: PixeloidSans;
-		font-style: normal;
-		font-weight: 400;
-		src: url(fonts/PixeloidSans-mLxMm.woff2);
-	}
-
-	#pixelfont {
-		font-family: PixeloidSans;
-	}
-</style>
