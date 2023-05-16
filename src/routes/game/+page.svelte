@@ -1,7 +1,6 @@
 <script>
 	import Greet from '$lib/Greet.svelte';
+	import Navbar from '$lib/Navbar.svelte';
 </script>
 
-<a href="/">Home</a>
-
-<Greet />
+<Navbar />

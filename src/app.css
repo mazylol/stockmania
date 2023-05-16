@@ -8,3 +8,7 @@
 	font-weight: 400;
 	src: url(/fonts/PixeloidSans-mLxMm.woff2);
 }
+
+* {
+	font-family: PixeloidSans, sans-serif;
+}

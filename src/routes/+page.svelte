@@ -1,4 +1,4 @@
-<h1 class="text-8xl text-center mt-[25vh]" style="font-family: PixeloidSans">
+<h1 class="text-8xl text-center mt-[25vh]">
 	<span class="text-green-400">Stock</span><span class="text-red-600">Mania</span>
 </h1>
 
