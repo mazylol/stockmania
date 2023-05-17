@@ -50,3 +50,14 @@ pub fn check_save() {
         }
     }
 }
+
+pub fn load_save() -> Data {
+    let save_file = File::open("save.json");
+    if save_file.is_err() {
+        panic!("Failed to open save file!");
+    } else {
+        let save_file = save_file.unwrap();
+        let save_data: Data = serde_json::from_reader(save_file).unwrap();
+        return save_data;
+    }
+}
