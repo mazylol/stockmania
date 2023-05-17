@@ -1,8 +1,8 @@
 use std::{fs::File, io::Write};
 
-use serde::{Deserialize, Serialize};
-
 use rand::Rng;
+
+use crate::types::data::{Data, Stock};
 
 pub fn check_save() {
     if File::open("save.json").is_err() {
@@ -49,17 +49,4 @@ pub fn check_save() {
             println!("New save file created!");
         }
     }
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-#[serde(rename_all = "camelCase")]
-pub struct Data {
-    stocks: Vec<Stock>,
-    balance: f64,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-struct Stock {
-    name: String,
-    price: f64,
 }
