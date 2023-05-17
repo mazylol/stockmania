@@ -19,23 +19,28 @@ pub fn check_save() {
                     serde_json::to_string(&Data {
                         stocks: vec![
                             Stock {
-                                name: "AAPL".to_string(),
+                                name: "Apple".to_string(),
+                                ticker: "AAPL".to_string(),
                                 price: rng.gen_range(100.0..500.0),
                             },
                             Stock {
-                                name: "AMZN".to_string(),
+                                name: "Amazon".to_string(),
+                                ticker: "AMZN".to_string(),
                                 price: rng.gen_range(100.0..500.0),
                             },
                             Stock {
-                                name: "GOOG".to_string(),
+                                name: "Google".to_string(),
+                                ticker: "GOOG".to_string(),
                                 price: rng.gen_range(100.0..500.0),
                             },
                             Stock {
-                                name: "MSFT".to_string(),
+                                name: "Microsoft".to_string(),
+                                ticker: "MSFT".to_string(),
                                 price: rng.gen_range(200.0..600.0),
                             },
                             Stock {
-                                name: "TSLA".to_string(),
+                                name: "Tesla".to_string(),
+                                ticker: "TSLA".to_string(),
                                 price: rng.gen_range(100.0..400.0),
                             },
                         ],

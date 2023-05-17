@@ -10,5 +10,6 @@ pub struct Data {
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Stock {
     pub name: String,
+    pub ticker: String,
     pub price: f64,
 }
