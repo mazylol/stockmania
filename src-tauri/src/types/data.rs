@@ -12,4 +12,5 @@ pub struct Stock {
     pub name: String,
     pub ticker: String,
     pub price: f64,
+    pub owned: i32,
 }
