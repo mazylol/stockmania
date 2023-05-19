@@ -1,5 +1,13 @@
+<script lang="ts">
+	let active = 1;
+</script>
+
 <div class="btm-nav">
-	<button class="hover:active">
+	<button
+		class="hover:-translate-y-1 transition-transform duration-75"
+		class:active={active === 1}
+		on:click={() => (active = 1)}
+	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			class="h-5 w-5"
@@ -14,7 +22,11 @@
 			/></svg
 		>
 	</button>
-	<button class="hover:active">
+	<button
+		class="hover:-translate-y-1 transition-transform duration-75"
+		class:active={active === 2}
+		on:click={() => (active = 2)}
+	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			class="h-5 w-5"
@@ -29,7 +41,11 @@
 			/></svg
 		>
 	</button>
-	<button class="hover:active">
+	<button
+		class="hover:-translate-y-1 transition-transform duration-75"
+		class:active={active === 3}
+		on:click={() => (active = 3)}
+	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			class="h-5 w-5"
