@@ -14,3 +14,17 @@ pub struct Stock {
     pub price: f64,
     pub owned: i32,
 }
+
+impl Stock {
+    pub fn new(name: &str, ticker: &str, price: f64, owned: i32) -> Stock {
+        let name: String = name.to_string();
+        let ticker: String = ticker.to_string();
+
+        return Stock {
+            name,
+            ticker,
+            price,
+            owned,
+        };
+    }
+}

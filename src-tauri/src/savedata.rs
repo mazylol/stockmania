@@ -18,36 +18,11 @@ pub fn check_save() {
                 .write_all(
                     serde_json::to_string(&Data {
                         stocks: vec![
-                            Stock {
-                                name: "Apple".to_string(),
-                                ticker: "AAPL".to_string(),
-                                price: rng.gen_range(100.0..500.0),
-                                owned: 0,
-                            },
-                            Stock {
-                                name: "Amazon".to_string(),
-                                ticker: "AMZN".to_string(),
-                                price: rng.gen_range(100.0..500.0),
-                                owned: 0,
-                            },
-                            Stock {
-                                name: "Google".to_string(),
-                                ticker: "GOOG".to_string(),
-                                price: rng.gen_range(100.0..500.0),
-                                owned: 0,
-                            },
-                            Stock {
-                                name: "Microsoft".to_string(),
-                                ticker: "MSFT".to_string(),
-                                price: rng.gen_range(200.0..600.0),
-                                owned: 0,
-                            },
-                            Stock {
-                                name: "Tesla".to_string(),
-                                ticker: "TSLA".to_string(),
-                                price: rng.gen_range(100.0..400.0),
-                                owned: 0,
-                            },
+                            Stock::new("Apple", "AAPL", rng.gen_range(100.0..500.0), 0),
+                            Stock::new("Amazon", "AMZN", rng.gen_range(100.0..500.0), 0),
+                            Stock::new("Google", "GOOG", rng.gen_range(100.0..500.0), 0),
+                            Stock::new("Microsoft", "MSFT", rng.gen_range(200.0..600.0), 0),
+                            Stock::new("Tesla", "TSLA", rng.gen_range(100.0..400.0), 0),
                         ],
                         balance: 10000.0,
                     })
