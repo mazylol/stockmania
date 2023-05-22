@@ -10,6 +10,12 @@
 	async function sell_stock(ticker: string) {
 		await invoke('sell_stock', { ticker: ticker });
 	}
+
+	async function price_changes() {
+		await invoke('price_changes');
+	}
+
+	setInterval(price_changes, 60000);
 </script>
 
 <button on:click={() => buy_stock('AAPL')}>Buy AAPL</button>
