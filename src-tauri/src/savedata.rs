@@ -47,6 +47,13 @@ pub fn load_save() -> Data {
     }
 }
 
+#[tauri::command]
+pub fn get_data() -> Result<Data, String> {
+    let data = load_save();
+
+    Ok(data)
+}
+
 pub fn save_data(data: Data) {
     let save_file = File::create("save.json");
     if save_file.is_err() {

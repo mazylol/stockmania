@@ -1,7 +1,6 @@
 use rand::Rng;
 
 use crate::savedata;
-use crate::types::data::Data;
 
 #[tauri::command]
 pub fn buy_stock(ticker: String) {
@@ -29,11 +28,6 @@ pub fn sell_stock(ticker: String) {
     }
 
     savedata::save_data(data);
-}
-
-#[tauri::command]
-pub fn get_data() -> Data {
-    return savedata::load_save();
 }
 
 #[tauri::command]

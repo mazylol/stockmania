@@ -12,8 +12,8 @@ fn main() {
         .invoke_handler(tauri::generate_handler![
             stocks::buy_stock,
             stocks::sell_stock,
-            stocks::get_data,
-            stocks::price_changes
+            stocks::price_changes,
+            savedata::get_data
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
