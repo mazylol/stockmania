@@ -23,6 +23,7 @@ pub fn check_save() {
                             Stock::new("Google", "GOOG", rng.gen_range(100.0..500.0), 0),
                             Stock::new("Microsoft", "MSFT", rng.gen_range(200.0..600.0), 0),
                             Stock::new("Tesla", "TSLA", rng.gen_range(100.0..400.0), 0),
+                            Stock::new("Meta", "META", rng.gen_range(100.0..400.0), 0),
                         ],
                         balance: 10000.0,
                     })
