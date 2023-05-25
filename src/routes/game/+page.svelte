@@ -27,7 +27,7 @@
 		Cash: ${Math.round((data.balance + Number.EPSILON) * 100) / 100}
 	</h1>
 
-	<div class="grid gap-4 grid-cols-2">
+	<div class="grid gap-4 grid-cols-2 mx-4">
 		{#each data.stocks as stock}
 			<div class="bg-gray-200 rounded-md">
 				<h1 class="text-center text-2xl font-bold">{stock.ticker}</h1>
